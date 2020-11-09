@@ -10,7 +10,7 @@ class NoteList {
 
   createNote(string){
     var note = new Note(string);
-    notes.push(note)
+    this.notes.push(note);
   }
 
 }
