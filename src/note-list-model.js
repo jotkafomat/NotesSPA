@@ -4,11 +4,11 @@ class NoteList {
     this.notes = []
   }
 
-  showNotes(){
-    return this.notes
+  all(){
+    return this.notes;
   }
 
-  createNote(string){
+  createNote(string) {
     var note = new Note(string);
     this.notes.push(note);
   }

@@ -1,0 +1,53 @@
+class Note {
+  constructor(text = "My favourite language is JavaScript") {
+    this.text = text
+  }
+
+  showText() {
+    return this.text
+  }
+}
+
+class NoteList {
+
+  constructor() {
+    this.notes = []
+  }
+
+  all(){
+    return this.notes;
+  }
+
+  createNote(string){
+    var note = new Note(string);
+    this.notes.push(note);
+  }
+
+}
+class NoteListView {
+
+  constructor(noteList){
+    this.noteList = noteList.all();
+  }
+
+  htmlString(){
+    var openTag = "<ul>"
+    var closingTag ="</ul>"
+
+    var body = this.noteList.map(note => "<li><div>" + note.showText() + "</div></li>").join("");
+
+    return openTag + body + closingTag;
+  }
+}
+
+notelist = new NoteList();
+
+notelist.createNote("Faverite drink: selzer");
+notelist.all();
+notelist.createNote("Faverite food: pizza");
+notelist.all();
+
+notelistView = new NoteListView(notelist);
+string = notelistView.htmlString(notelist);
+
+
