@@ -1,6 +1,5 @@
-
 function howdy() {
   var element = document.getElementById('app');
-  element = "Howdy"
+  element.innerHTML = 'Howdy!!!';
 }
 howdy();
