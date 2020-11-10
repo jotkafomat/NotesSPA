@@ -28,4 +28,5 @@
 
   testNoteListStartWithEmpty();
   testCreatesNoteItAddsNewNoteToNoteList();
+  testReturnNotes();
 })(this);
