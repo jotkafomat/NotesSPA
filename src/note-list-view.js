@@ -10,7 +10,7 @@ class NoteListView {
 
     var body = this.noteList
       .all()
-      .map(note => "<li><div>" + note.showText() + "</div></li>")
+      .map(text => "<li><div>" + text.showText() + "</div></li>")
       .join("")
 
     return openTag + body + closingTag;
