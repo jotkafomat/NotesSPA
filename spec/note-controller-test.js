@@ -3,7 +3,7 @@
   function testNoteControllerCanBeInstantiated() {
     var noteController = new NoteController();
 
-    assert.isTrue(noteController.constructor.name === 'NoteController');
+    assert.isTrue(noteController instanceof NoteController);
     console.log("NoteControllerCanBeInstantiated Green");
   }
 
