@@ -8,12 +8,12 @@ class NoteController{
 
   }
 
-  getsHtml(){
-
-    var element = document.getElementById('app');
-    element.innerHTML = this.noteListView.htmlString();
-
-  }
+  // getsHtml(){
+  //
+  //   var element = document.getElementById('app');
+  //   element.innerHTML = this.noteListView.htmlString();
+  //
+  // }
 }
-let myNoteController = new NoteController();
-myNoteController.getsHtml();
+// let myNoteController = new NoteController();
+// myNoteController.getsHtml();
