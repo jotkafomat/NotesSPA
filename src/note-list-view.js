@@ -4,7 +4,7 @@ class NoteListView {
     this.noteList = noteList;
   }
 
-  htmlString(noteList){
+  htmlString(){
     var openTag = "<ul>"
     var closingTag ="</ul>"
 

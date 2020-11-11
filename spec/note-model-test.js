@@ -12,6 +12,6 @@
   };
 
 
-
+  testShowText();
   testTextNoteDefaultText();
 })(this);
