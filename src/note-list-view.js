@@ -10,7 +10,7 @@ class NoteListView {
 
     var body = this.noteList
       .all()
-      .map(text => "<li><div>" + text.showText().slice(0, 20) + "</div></li>")
+      .map(text => `<li><a href="#notes/${text.id}">` + text.showText().slice(0, 20) + "</a></li>")
       .join("")
 
     return openTag + body + closingTag;

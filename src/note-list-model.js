@@ -2,6 +2,7 @@ class NoteList {
 
   constructor() {
     this.notes = []
+    this.id = 0
   }
 
   all(){
@@ -9,8 +10,9 @@ class NoteList {
   }
 
   createNote(string) {
-    var note = new Note(string);
+    var note = new Note(string, this.id);
     this.notes.push(note);
+    this.id += 1
   }
 
 }
