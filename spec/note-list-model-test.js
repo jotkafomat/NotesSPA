@@ -4,7 +4,7 @@
 
     var noteList = new NoteList();
 
-    assert.isTrue(!noteList.notes.lenght);
+    assert.isTrue(noteList.notes.length === 0);
   };
 
   function testCreatesNoteItAddsNewNoteToNoteList() {
