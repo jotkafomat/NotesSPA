@@ -17,7 +17,7 @@
   function testNoteControllerCanBeInstantiated() {
 
     var doubleNoteList = new DoubleNotelist();
-    var doubleNotelistView = new DoubleNotelistView
+    var doubleNotelistView = new DoubleNotelistView();
     var noteController = new NoteController(doubleNoteList);
 
     assert.isTrue(noteController instanceof NoteController);
