@@ -1,17 +1,16 @@
 
 class NoteController{
-  constructor(noteList = new NoteList()) {
+  constructor(noteList = new NoteList(), noteListViewClass = NoteListView) {
 
     this.noteList = noteList;
     this.noteList.createNote("Favourite drink: seltzer");
-    this.noteListView = new NoteListView(this.noteList);
+    this.noteListView = new noteListViewClass(this.noteList);
 
   }
 
   getsHtml() {
     var element = document.getElementById('app');
-    element.innerHTML = this.noteListView.htmlString();
-
+    return element.innerHTML = this.noteListView.htmlString();
   }
 }
 let myNoteController = new NoteController();
