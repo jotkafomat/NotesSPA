@@ -39,11 +39,14 @@
         cancelable: true,
         view: window
       });
-    
+
     }
+    console.log(document.URL);
     fakeClick()
+    console.log(document.URL);
     var path = document.URL.split("#")[1];
     assert.isTrue(path === "notes/0");
+    console.log("changesHash Green");
   }
 
   testGetsHtml();
